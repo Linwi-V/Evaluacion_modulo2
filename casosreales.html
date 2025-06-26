@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    
     <!-- Navbar-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top shadow-sm">
     <div class="container">
@@ -30,56 +33,151 @@
     <h2 class="display-6 fw-bold">Casos Reales y tipos de amenazas</h2>
 
     <div class="row justify-content-center">
-  <!-- Amenaza 1 -->
-    <div class="col-6 mb-4">
-    <div class="card h-100">
-      <img src="assets/img/06-4.jpg" class="card-img-top" alt="Phishing">
-      <div class="card-body">
-        <h5 class="card-title">Phishing</h5>
-        <button class="btn btn-primary" data-toggle="modal" data-target="#modalPhishing">Quiero saber más</button>
-      </div>
+  <!-- Amenaza 1: Phishing -->
+<div class="col-6 mb-4">
+  <div class="card h-100">
+    <img src="assets/img/10-tips-to-prevent-phishing.png" class="card-img-top" alt="Dibujo de un anzuelo en una pantalla de computador">
+    <div class="card-body">
+      <h5 class="card-title">Phishing</h5>
+      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPhishing">Quiero saber más</button>
     </div>
   </div>
+</div>
 
-  <!-- Amenaza 2 -->
+<!-- Modal Phishing -->
+<div class="modal fade" id="modalPhishing" tabindex="-1" aria-labelledby="modalPhishingLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalPhishingLabel">¿Qué es el Phishing?</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      
+      <div class="modal-body">
+        <p>Los ataques de <strong>phishing</strong> son mensajes de correo electrónico, texto o voz que engañan a les usuaries para que descarguen malware, compartan información confidencial o envíen fondos a las personas equivocadas.</p>
+        <p>La mayoría de les usuaries están familiarizades con las estafas de <strong>phishing</strong> masivo: mensajes fraudulentos enviados en masa por correo electrónico que parecen proceder de una marca importante y de confianza, en los que se pide a los destinatarios que restablezcan sus contraseñas o vuelvan a introducir los datos de sus tarjetas de crédito. Las estafas de <strong>phishing</strong> más sofisticadas, como el <strong>spear phishing</strong> y el correo electrónico empresarial comprometido <strong>(BEC)</strong>, se dirigen a personas o grupos específicos para robar datos especialmente valiosos o grandes sumas de dinero.</p>
+      </div>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    
+    </div>
+  </div>
+</div>
+  
+
+  <!-- Amenaza 2: Ransomware -->
   <div class="col-6 mb-4">
     <div class="card h-100">
-      <img src="assets/img/13bc318686a97c3a7c51154d3be9611f.jpg" class="card-img-top" alt="Ransomware">
+      <img src="assets\img\PUBLICACIÓN EMP - ATAQUE RANSOMWARE_v3.png" class="card-img-top" alt="Dibujo de computador con un candado">
       <div class="card-body">
         <h5 class="card-title">Ransomware</h5>
-        <button class="btn btn-primary" data-toggle="modal" data-target="#modalRansomware">Quiero saber más</button>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalRansomware">Quiero saber más</button>
       </div>
     </div>
   </div>
 
-  <!-- Amenaza 3 -->
+  <!-- Modal Ransomware -->
+<div class="modal fade" id="modalRansomware" tabindex="-1" aria-labelledby="modalRansomwareLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalRansomwareLabel">¿Qué es el Ransomware?</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      
+      <div class="modal-body">
+        <p>El <strong>ransomware</strong> es un tipo de malware que encripta los datos o el dispositivo de una víctima y amenaza con mantenerlos encriptados, o algo peor, a menos que la víctima pague un rescate al atacante.</p>
+        <p>Los primeros ataques de <strong>ransomware</strong> exigían un rescate a cambio de la clave de cifrado necesaria para desbloquear los datos de la víctima. A partir de 2019, casi todos los ataques de <strong>ransomware</strong> fueron ataques de doble extorsión que también amenazaban con compartir públicamente los datos de las víctimas; algunos ataques de triple extorsión añadieron la amenaza de un ataque de denegación de servicio distribuido <strong>(DDoS)</strong>.</p>
+      </div>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+  <!-- Amenaza 3: Malware -->
   <div class="col-6 mb-4">
     <div class="card h-100">
-      <img src="assets/img/Image20250616214507.jpg" class="card-img-top" alt="Malware">
+      <img src="assets\img\what-is-malware.png" class="card-img-top" alt="Dibujo de computador con un virus">
       <div class="card-body">
         <h5 class="card-title">Malware</h5>
-        <button class="btn btn-primary" data-toggle="modal" data-target="#modalMalware">Quiero saber más</button>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalMalware">Quiero saber más</button>
       </div>
     </div>
   </div>
 
-  <!-- Amenaza 4 -->
+   <!-- Modal Malware -->
+<div class="modal fade" id="modalMalware" tabindex="-1" aria-labelledby="modalMalwareLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalMalwareLabel">¿Qué son los Malwares?</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      
+      <div class="modal-body">
+        <p>El <strong>malware</strong>, abreviatura de "software malicioso", es cualquier código de software o programa informático que se escribe de manera intencionada para dañar un sistema informático o a sus usuaries. Casi todos los ciberataques modernos implican algún tipo de <strong>malware</strong>.</p>
+        <p>Les piratas informáticos crean y utilizan <strong>malware</strong> para obtener acceso no autorizado a sistemas informáticos y datos confidenciales, secuestrar sistemas informáticos y operarlos de forma remota, interrumpir o dañar sistemas informáticos o tomar como rehenes datos o sistemas a cambio de grandes sumas de dinero.</p>
+      </div>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+  <!-- Amenaza 4: DDoS -->
   <div class="col-6 mb-4">
     <div class="card h-100">
-      <img src="assets/img/Image20250616214507.jpg" class="card-img-top" alt="DDoS">
+      <img src="assets/img/Academy-What-is-DDoS-01.png" class="card-img-top" alt="Dibujo de varios dispositivos sobrecargando un servidor">
       <div class="card-body">
         <h5 class="card-title">Ataques DDoS</h5>
-        <button class="btn btn-primary" data-toggle="modal" data-target="#modalDDoS">Quiero saber más</button>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDDoS">Quiero saber más</button>
       </div>
     </div>
   </div>
 </div>
 
-  	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-	<script>
-  	$(function () {
-    $('[data-toggle="tooltip"]').tooltip();
-  	});
-	</script>
-</body>
+<!-- Modal DDoS -->
+<div class="modal fade" id="modalDDoS" tabindex="-1" aria-labelledby="modalDDoSLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalDDoSLabel">¿Qué son los Malwares?</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      
+      <div class="modal-body">
+        <p>Un ataque <strong>DDoS</strong> intenta colapsar un servidor, un sitio web o una red sobrecargándolos de tráfico, normalmente procedente de una botnet, una red de sistemas distribuidos que secuestra mediante el uso de malware y operaciones remotas controladas.</p>
+        <p>El volumen global de ataques <strong>DDoS</strong> se disparó durante la pandemia de COVID-19. Cada vez más, les atacantes combinan ataques <strong>DDoS</strong> con ataques de <strong>ransomware</strong>, o simplemente amenazan para lanzar ataques <strong>DDoS</strong> a menos que el objetivo pague un rescate.</p>
+      </div>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>		
+    <script>
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> <!--Poner antes de empezar el carrusel no aki-->
+  </body>
+</html>

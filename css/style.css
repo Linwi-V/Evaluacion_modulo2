@@ -1,0 +1,7 @@
+.card-img-top {
+  width: 100%;
+  aspect-ratio: 1.6; /* Basado en la imagen del Ransomware */
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
