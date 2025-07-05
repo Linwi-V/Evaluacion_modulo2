@@ -1,7 +1,75 @@
+/* Asegura que todas las tarjetas tengan la misma altura y el botón alineado abajo */
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* La imagen no debe forzar el tamaño de la tarjeta */
 .card-img-top {
-  width: 100%;
-  aspect-ratio: 1.6; /* Basado en la imagen del Ransomware */
   object-fit: cover;
-  object-position: center;
+  height: 200px;
+}
+
+/* Acomoda el contenido y empuja el botón al fondo */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+/* Opcional: mejora la estética del botón alineado */
+.card-body button {
+  margin-top: auto;
+}
+
+.carousel-caso {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 1rem;
+}
+
+.carousel-caso h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+.slick-casos .card {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  margin: 0 10px;
+  height: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: #444;
+}
+
+.card small {
   display: block;
+  margin-top: 1rem;
+  color: #6c757d;
+}
+
+/* Slick dots */
+.slick-dots {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.slick-dots li button:before {
+  color: #007bff;
 }
