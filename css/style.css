@@ -1,17 +1,14 @@
-/* Asegura que todas las tarjetas tengan la misma altura y el botón alineado abajo */
 .card {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
-/* La imagen no debe forzar el tamaño de la tarjeta */
 .card-img-top {
   object-fit: cover;
   height: 200px;
 }
 
-/* Acomoda el contenido y empuja el botón al fondo */
 .card-body {
   display: flex;
   flex-direction: column;
@@ -19,7 +16,6 @@
   flex-grow: 1;
 }
 
-/* Opcional: mejora la estética del botón alineado */
 .card-body button {
   margin-top: auto;
 }

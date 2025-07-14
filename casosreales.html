@@ -1,57 +1,46 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Casos Reales - Ciberseguridad</title>
+  <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Casos Reales - Ciberseguridad</title>
   <!-- Bootstrap y Slick -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-  <link rel="stylesheet" href="css\style.css"
-</head>
-<body>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="css\style.css"
+  </head>
+  <body>
   <!-- Navbar-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#">CIBERSEGURIDAD</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">CIBERSEGURIDAD</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#intro">¿Qué es?</a></li>
-          <li class="nav-item"><a class="nav-link" href="#casos">Casos Reales</a></li>
-          <li class="nav-item"><a class="nav-link" href="#consejos">Buenas Prácticas</a></li>
-          <li class="nav-item"><a class="nav-link" href="#info">Mas información</a></li>
-        </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">¿Qué es?</a></li>
+            <li class="nav-item"><a class="nav-link" href="casosreales.html">Casos Reales</a></li>
+            <li class="nav-item"><a class="nav-link" href="consejos.html">Buenas Prácticas</a></li>
+            <li class="nav-item"><a class="nav-link" href="#info">Más información</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
   <!-- Hero -->
-  <section class="bg-light text-dark text-center py-3" style="margin-top: 60px;">
-    <div class="container">
-      <h2 class="display-6 fw-bold">Casos Reales y tipos de amenazas</h2>
-
+    <section class="bg-light text-dark text-center py-3" style="margin-top: 60px;">
+      <div class="container">
+        <h2 class="display-6 fw-bold">Casos Reales y tipos de amenazas</h2>
       <div class="row equal-height justify-content-center">
         <!-- Amenaza 1: Phishing -->
         <div class="col-6 mb-4">
           <div class="card h-100">
-            <img
-              src="assets/img/10-tips-to-prevent-phishing.png"
-              class="card-img-top"
-              alt="Dibujo de un anzuelo en una pantalla de computador"
-            />
+            <img src="assets/img/10-tips-to-prevent-phishing.png" class="card-img-top" alt="Dibujo de un anzuelo en una pantalla de computador"/>
             <div class="card-body">
               <h5 class="card-title">Phishing</h5>
-              <button
-                class="btn btn-success"
-                data-bs-toggle="modal"
-                data-bs-target="#modalPhishing"
-              >
-                Quiero saber más
-              </button>
+              <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalPhishing">Quiero saber más</button>
             </div>
           </div>
         </div>
@@ -59,19 +48,10 @@
         <!-- Amenaza 2: Ransomware -->
         <div class="col-6 mb-4">
           <div class="card h-100">
-            <img
-              src="assets/img/PUBLICACIÓN EMP - ATAQUE RANSOMWARE_v3.png"
-              class="card-img-top"
-              alt="Dibujo de computador con un candado"
-            />
+            <img src="assets/img/PUBLICACIÓN EMP - ATAQUE RANSOMWARE_v3.png" class="card-img-top" alt="Dibujo de computador con un candado"/>
             <div class="card-body">
               <h5 class="card-title">Ransomware</h5>
-              <button
-                class="btn btn-success"
-                data-bs-toggle="modal"
-                data-bs-target="#modalRansomware"
-              >
-                Quiero saber más
+              <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalRansomware">Quiero saber más
               </button>
             </div>
           </div>
@@ -80,19 +60,10 @@
         <!-- Amenaza 3: Malware -->
         <div class="col-6 mb-4">
           <div class="card h-100">
-            <img
-              src="assets/img/what-is-malware.png"
-              class="card-img-top"
-              alt="Dibujo de computador con un virus"
-            />
+            <img src="assets/img/what-is-malware.png" class="card-img-top" alt="Dibujo de computador con un virus"/>
             <div class="card-body">
               <h5 class="card-title">Malware</h5>
-              <button
-                class="btn btn-success"
-                data-bs-toggle="modal"
-                data-bs-target="#modalMalware"
-              >
-                Quiero saber más
+              <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalMalware">Quiero saber más
               </button>
             </div>
           </div>
@@ -101,19 +72,10 @@
         <!-- Amenaza 4: DDoS -->
         <div class="col-6 mb-4">
           <div class="card h-100">
-            <img
-              src="assets/img/Academy-What-is-DDoS-01.png"
-              class="card-img-top"
-              alt="Dibujo de varios dispositivos sobrecargando un servidor"
-            />
+            <img src="assets/img/Academy-What-is-DDoS-01.png" class="card-img-top" alt="Dibujo de varios dispositivos sobrecargando un servidor"/>
             <div class="card-body">
               <h5 class="card-title">Ataques DDoS</h5>
-              <button
-                class="btn btn-success"
-                data-bs-toggle="modal"
-                data-bs-target="#modalDDoS"
-              >
-                Quiero saber más
+              <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalDDoS">Quiero saber más
               </button>
             </div>
           </div>
@@ -122,7 +84,7 @@
     </div>
   </section>
 
-  <!-- Modales (solo una vez) -->
+  <!-- Modales -->
   <div class="modals-container">
     <!-- Modal Phishing -->
     <div class="modal fade" id="modalPhishing" tabindex="-1" aria-labelledby="modalPhishingLabel" aria-hidden="true">
@@ -143,7 +105,7 @@
               La mayoría de les usuaries están familiarizades con las estafas de
               <strong>phishing</strong> masivo: mensajes fraudulentos enviados en
               masa por correo electrónico que parecen proceder de una marca
-              importante y de confianza, en los que se pide a los destinatarios
+              importante y de confianza, en los que se pide a les destinataries
               que restablezcan sus contraseñas o vuelvan a introducir los datos
               de sus tarjetas de crédito. Las estafas de
               <strong>phishing</strong> más sofisticadas, como el
@@ -233,12 +195,12 @@
           </div>
           <div class="modal-body">
             <p>
-              Un ataque de denegación de servicio distribuido (DDoS) es un intento
+              Un ataque de <strog>denegación de servicio distribuido (DDoS)</strog> es un intento
               malintencionado de interrumpir el tráfico normal de un servidor,
               servicio o red abrumándolo con un aluvión de tráfico de Internet.
             </p>
             <p>
-              Los ataques DDoS suelen llevarse a cabo utilizando una red de
+              Los ataques <strong>DDoS</strong> suelen llevarse a cabo utilizando una red de
               computadoras comprometidas y controladas por el atacante, conocidas
               como botnets.
             </p>
