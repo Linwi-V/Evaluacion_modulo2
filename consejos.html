@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Buenas Prácticas - Ciberseguridad</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
-  <link rel="stylesheet" href="css\style.css"
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
- <!-- Navbar-->
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
     <div class="container">
       <a class="navbar-brand fw-bold" href="#">CIBERSEGURIDAD</a>
@@ -24,5 +24,61 @@
         </ul>
       </div>
     </div>
-  </nav>    
+  </nav>   
+
+  <!-- Sección de consejos -->
+  <section class="bg-light text-dark text-center py-3" style="margin-top: 60px" id="consejos">
+    <div class="container">
+      <h2 class="display-6 fw-bold">Buenas prácticas y tecnologías clave de ciberseguridad:</h2>
+      <img src="assets/img/04_CONSEJOS-CIBERSEGURIDAD.jpg" alt="Consejos sobre ciberseguridad" class="img-fluid mb-5 w-100"/>
+      <p class="lead">
+        Aunque la estrategia de ciberseguridad de cada organización difiere, 
+        muchas utilizan estas herramientas y tácticas para reducir vulnerabilidades, 
+        prevenir ataques e interceptar ataques en curso:
+      </p> 
+      <ul class="list-group list-group-flush text-start">
+        <li class="list-group-item">Formación en concienciación sobre seguridad</li>
+        <li class="list-group-item">Herramientas de seguridad de datos</li>
+        <li class="list-group-item">Gestión de identidad y acceso</li>
+        <li class="list-group-item">Detección y respuesta a amenazas</li>
+        <li class="list-group-item">Recuperación ante desastres</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Formulario de contacto -->
+<section id="info" class="container my-5">
+  <h4 class="fw-bold">Solicita más información</h4>
+  <form id="form-contacto" onsubmit="return validarContacto()">
+    <input type="text" id="contacto-nombre" class="form-control my-2" placeholder="Nombre completo" required>
+    <input type="email" id="contacto-correo" class="form-control my-2" placeholder="Correo electrónico" required>
+    <input type="tel" id="contacto-telefono" class="form-control my-2" placeholder="Teléfono (opcional)">
+    <textarea id="contacto-mensaje" class="form-control my-2" placeholder="Escribe tu mensaje aquí..." required></textarea>
+    <button type="submit" class="btn btn-dark mt-2">Enviar</button>
+    <div id="mensaje-error" class="text-danger mt-2"></div>
+  </form>
+</section>
+
+<script>
+  function validarContacto() {
+    if (!document.getElementById("contacto-nombre").value) {
+      alert("Ingresa tu nombre");
+      return false;
+    }
+    if (!document.getElementById("contacto-correo").value) {
+      alert("Ingresa tu correo");
+      return false;
+    }
+    if (!document.getElementById("contacto-mensaje").value) {
+      alert("Escribe un mensaje");
+      return false;
+    }
+    alert("¡Formulario enviado!");
+    return true;
+  }
+</script>
+
+  <!-- Scripts-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+</html>
