@@ -1,3 +1,13 @@
+h1, h2, h3, h4, h5, h6,
+.card-title,
+.modal-title,
+.navbar-brand,
+.display-6,
+.navbar-nav,
+.fw-bold {
+  font-family: 'Hacker', sans-serif;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -34,12 +44,17 @@
 }
 
 .slick-casos .card {
-  background-color: #f8f9fa;
+  background-color: #000000;
+  color: #ddd;
   border: 1px solid #ddd;
   padding: 1.5rem;
   margin: 0 10px;
   height: 100%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.slick-casos .card-body p {
+  font-size: 1.2rem; /* Tamaño más grande para el texto */
 }
 
 .card-title {

@@ -28,27 +28,29 @@
 
   <!-- Sección de consejos -->
   <section class="bg-light text-dark text-center py-3" style="margin-top: 60px" id="consejos">
-    <div class="container">
-      <h2 class="display-6 fw-bold">Buenas prácticas y tecnologías clave de ciberseguridad:</h2>
+      <div class="container-fluid px-0">
+      <h2 class="display-6 fw-bold text-danger">Buenas prácticas y tecnologías clave de ciberseguridad:</h2>
       <img src="assets/img/04_CONSEJOS-CIBERSEGURIDAD.jpg" alt="Consejos sobre ciberseguridad" class="img-fluid mb-5 w-100"/>
-      <p class="lead">
+      <p class="lead text-center mb-4 mx-5">
         Aunque la estrategia de ciberseguridad de cada organización difiere, 
         muchas utilizan estas herramientas y tácticas para reducir vulnerabilidades, 
         prevenir ataques e interceptar ataques en curso:
       </p> 
-      <ul class="list-group list-group-flush text-start">
-        <li class="list-group-item">Formación en concienciación sobre seguridad</li>
-        <li class="list-group-item">Herramientas de seguridad de datos</li>
-        <li class="list-group-item">Gestión de identidad y acceso</li>
-        <li class="list-group-item">Detección y respuesta a amenazas</li>
-        <li class="list-group-item">Recuperación ante desastres</li>
-      </ul>
-    </div>
-  </section>
+      <section class="bg-light text-dark text-center py-3" style="margin-top: 60px" id="consejos">
+  <div class="container">
+    <ul class="list-group list-group-flush text-white bg-dark mx-auto" style="max-width: 600px; border-radius: 8px;">
+      <li class="list-group-item bg-dark text-white">Formación en concienciación sobre seguridad</li>
+      <li class="list-group-item bg-dark text-white">Herramientas de seguridad de datos</li>
+      <li class="list-group-item bg-dark text-white">Gestión de identidad y acceso</li>
+      <li class="list-group-item bg-dark text-white">Detección y respuesta a amenazas</li>
+      <li class="list-group-item bg-dark text-white">Recuperación ante desastres</li>
+    </ul>
+  </div>
+</section>
 
   <!-- Formulario de contacto -->
 <section id="info" class="container my-5">
-  <h4 class="fw-bold">Solicita más información</h4>
+  <h4 class="fw-bold bg-danger text-white">Solicita más información</h4>
   <form id="form-contacto" onsubmit="return validarContacto()">
     <input type="text" id="contacto-nombre" class="form-control my-2" placeholder="Nombre completo" required>
     <input type="email" id="contacto-correo" class="form-control my-2" placeholder="Correo electrónico" required>
